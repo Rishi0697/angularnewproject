@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Signup</h1>
+          <h6>Register Yourself</h6>
+        </div>
+        <form [formGroup]="signupForm"  (ngSubmit)="signup()">
+          <div class="firstlast">
+            <div class="mb-3">
+              <label for="fname" class="form-label">First name</label>
+              <input type="text" class="form-control" id="fname" formControlName="fname">
+              <span style="color: red;" *ngIf="fname && fname.invalid && fname.touched"> First Name required</span>
+            </div>
+            <div class="mb-3 mx-1">
+              <label for="lname" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lname" formControlName="lname">
+              <span style="color: red;" *ngIf="lname && lname.invalid && lname.touched"> last Name required</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="email" class="form-control" id="username" aria-describedby="emailHelp" formControlName="user">
+            <span style="color: red;" *ngIf="user && user.invalid && user.touched" >Please provide valid email</span>
+          </div>
+          <div class="pass">
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" formControlName="password">
+              <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password must be more than 5 characters</span>
+            </div>
+
+            <div class="mb-3 mx-1">
+              <label for="cpassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cpassword">
+            </div>
+          </div>
+          <button type="submit" [disabled]="!signupForm.valid"  class="btn btn-primary">Submit</button>
+        </form>
+        <a style="color: #ffff; margin-top: 10px" routerLink="/login">Already registered? click to login </a>
+      </div>
+    </div>
+  </div>
+</div>

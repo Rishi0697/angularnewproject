@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    position: absolute;
+    right: 0%;
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+.main_div{
+    position: absolute;
+    top: 16%;
+    left: 37%;  
+}
+table, th, td{
+    border: 1px solid black;
+    padding: 8px;
+}

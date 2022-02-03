@@ -1,0 +1,43 @@
+.main_div{
+    height: 100vh;
+    width: 100%;
+    background-color: #A9A9A9;
+}
+.second_div{
+    display: flex;
+    
+}
+.second_div h1{
+    position: absolute;
+    left: 44%;
+    top: 5%;
+}
+button{
+    position: absolute;
+    right: 0%;
+    font-size: medium;
+    background-color: lightblue;
+    padding: 1 rem;
+}
+
+.third h2{
+    position: absolute;
+    left: 32%;
+    top: 15%;
+
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 175px;  
+}
+
+ ul li {
+    margin-top: 40px;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please enter Email and Password</h6>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        formControlName="username">
+                        <span style="color: red;" *ngIf="username && username.invalid && username.touched">Please provide valid user</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            formControlName="password">
+                            <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password must be more than 5 characters</span>
+                    </div>
+
+                    <button type="submit" [disabled]="!loginForm.valid"  class="btn btn-primary">Login</button>
+                </form>
+                <a style="color: #ffff; margin-top: 10px" routerLink="/signup">New user? click to signup</a>
+
+            </div>
+        </div>
+    </div>
+</div>

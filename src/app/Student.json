@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name": "Rishikesh",
+        "email":"rishikesh@gmail.com",
+        "gender":"male"
+    },
+    {
+        "id":2,
+        "name": "Abhishek",
+        "email":"abhishek@gmail.com",
+        "gender":"male"
+    },
+    {
+        "id":3,
+        "name": "anusha",
+        "email":"anusha@gmail.com",
+        "gender":"female"
+    },
+    {
+        "id":4,
+        "name": "Sethupathy",
+        "email":"Sethupathy@gmail.com",
+        "gender":"male"
+    },
+    {
+        "id":5,
+        "name": "Rajesh",
+        "email":"Rajesh@gmail.com",
+        "gender":"male"
+    },
+    {
+        "id":6,
+        "name": "debasheesh",
+        "email":"debasheesh@gmail.com",
+        "gender":"male"
+    }
+]
