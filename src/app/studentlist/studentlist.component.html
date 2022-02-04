@@ -9,6 +9,7 @@
                 <th>NAMES</th>
                 <th>EMAIL</th>
                 <th>GENDER</th>
+                <th>See details</th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@
                 <td>{{student.name}}</td>
                 <td>{{student.email}}</td>
                 <td>{{student.gender}}</td>
+                <td><button  (click)="func(student.id)" routerLink="/list/{{student.id }}">DETAILS</button></td>
             </tr>
         </tbody>
     </table>

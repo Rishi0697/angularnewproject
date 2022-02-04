@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { TorusComponent } from './components/torus/torus.component';
+import { ListComponent } from './list/list.component';
 import { StudentlistComponent } from './studentlist/studentlist.component';
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'signup', component:SignupComponent},
   // {path: 'torus', component:TorusComponent}
-  {path: "studentlist", component:StudentlistComponent}
+  {path: "studentlist", component:StudentlistComponent},
+  {path: "list/:id", component:ListComponent}
 ];
 
 @NgModule({

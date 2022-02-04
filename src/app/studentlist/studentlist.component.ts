@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import studentData from '../Student.json';
+import studentData from 'src/assets/Student.json';
 interface Student {
   id:Number,
   name:String,
@@ -22,4 +22,8 @@ export class StudentlistComponent implements OnInit {
   }
   
   students: Student[] = studentData;
+  // console.log(studentData);
+  func(id:any){
+    localStorage.setItem("id",JSON.stringify(id));
+  }
 }

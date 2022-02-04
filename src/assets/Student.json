@@ -4,12 +4,14 @@
         "name": "Rishikesh",
         "email":"rishikesh@gmail.com",
         "gender":"male"
+       
+     
     },
     {
         "id":2,
-        "name": "Abhishek",
-        "email":"abhishek@gmail.com",
-        "gender":"male"
+        "name": "Anuradha",
+        "email":"Anuradha@gmail.com",
+        "gender":"female"
     },
     {
         "id":3,
@@ -33,6 +35,12 @@
         "id":6,
         "name": "debasheesh",
         "email":"debasheesh@gmail.com",
+        "gender":"male"
+    },
+    {
+        "id":7,
+        "name": "surya",
+        "email":"surya@gmail.com",
         "gender":"male"
     }
 ]

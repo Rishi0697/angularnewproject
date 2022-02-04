@@ -9,6 +9,7 @@ import { LoginComponent } from './component/login/login.component';
 import { TorusComponent } from './components/torus/torus.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentlistComponent } from './studentlist/studentlist.component';
+import { ListComponent } from './list/list.component';
   
 
 @NgModule({
@@ -17,7 +18,8 @@ import { StudentlistComponent } from './studentlist/studentlist.component';
     SignupComponent,
     LoginComponent,
     TorusComponent,
-    StudentlistComponent
+    StudentlistComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
